@@ -1,0 +1,142 @@
+@import url("./reset.css");
+  *{
+    outline: none;
+}  
+
+/* Header */ 
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-image: url(../images/charlie-harris-U20fx1ZOAIg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family:serif;
+    color: #fff;
+    font-style: outline;
+    }
+
+header h1 {
+    font-size: 3.6em;
+    margin: 0.05em;
+    color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    
+}
+    
+ header h2 {
+    font-size: 2.9em;
+    color: #ffa153;
+    font-weight: 100;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+/*main*/
+
+.content{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "aside main";
+}
+    main{
+    grid-area: main;
+    justify-content: center;
+    padding: 3em;
+    }
+main > div{
+    margin: AUTO;
+    justify-content: right;
+}
+
+main > div > ul{
+    display:inline-block;
+    outline: solid 1px #000000;
+    border-radius: .4em;
+    margin: 1em .5em 1em;
+}
+main > div > ul > li{
+    outline: none;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+#img1{
+    display: block;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
+    width: auto;
+}
+
+
+#price {
+    text-align: center;
+    background-color: #383838;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+#main {
+    grid-area: main;
+    position: relative;
+    width: fit-content;
+}
+
+/*aside*/
+
+aside {
+    grid-area: aside;
+    padding: 1em;
+    outline: solid 1px #000000;
+
+}
+
+aside h2 {
+    font-size: 2.1em;
+    margin-bottom: 1em;
+}
+
+aside ol li {
+    padding: 1em;
+    padding-bottom: 1em;
+}
+
+aside ol li:nth-of-type(even) {
+    background-color: #383838;
+    color: #fff;
+    padding-bottom:1em ;
+}
+
+#img2{
+    grid-area: aside;
+    max-width: 15%;
+    padding: 0.5em;
+  
+}
+
+#img3{
+    grid-area: aside;
+    max-width: 15%;
+    padding: 0.5em;
+   
+}
+
+#img4{
+    grid-area: aside;
+    max-width: 15%;
+    padding: 0.5em;
+    
+}
+
+#img5{
+    grid-area: aside;
+    max-width: 15%;
+    padding: 0.5em;
+   
+}
